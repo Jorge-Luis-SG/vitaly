@@ -1,0 +1,28 @@
+@import '../.:/../../../styles.scss';
+
+.header{
+  background-color: $black;
+  &-content{
+    &-box1{
+      div{
+        background-color: $blue;
+        max-width: 145px;
+        height: 145px;
+        z-index: 1;
+        img{
+          width: 80%;
+        }
+      }
+    }
+    &-box2{
+      nav{
+        height: 100px;
+        ul{
+          max-width: 600px;
+          width: 100%;
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}

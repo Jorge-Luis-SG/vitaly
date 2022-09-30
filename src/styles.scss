@@ -1,1 +1,47 @@
 /* You can add global styles to this file, and also import other style files */
+@import './assets/fonts/fonts';
+
+//GLOBAL STYLES
+
+*{
+  color: #ffffff;
+}
+li{
+  list-style: none;
+}
+
+p{
+  @extend %gfont;
+  font-weight: 400;
+}
+
+body{
+  background-color: black;
+}
+
+.col-12,.col-lg-,.row{
+  padding: 0;
+  margin: 0;
+}
+
+.width-one{
+  @extend %width-one;
+}
+%width-one{
+  max-width: 1300px;
+  margin: 0 auto;
+  width: 90%;
+}
+
+
+// COLORES
+
+$black: #020202;
+$blue: #2E58FD;
+$gray: #D3D3D3;
+
+//SIZES
+
+$title1:2.5rem;
+$title2:4.6rem;
+

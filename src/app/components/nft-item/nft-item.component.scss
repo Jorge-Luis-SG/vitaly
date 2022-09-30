@@ -1,0 +1,54 @@
+@import '../.:/../../../styles.scss';
+$border:.4rem;
+.item{
+  .nft{
+    background-color: $blue;
+    height: 350px;
+    width: 100%;
+    max-width: 260px;
+    border-radius: 2rem 2rem 0 0;
+    background-image: url(../../../assets/img/logos/M1.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    img{
+      max-width: 270px;
+      position: absolute;
+      top: -80px;
+    }
+    .price-mint{
+      margin-bottom: 2rem;
+      &-box{
+        span{
+          @extend %gfont;
+        }
+        .price-text{
+          font-size: .65rem;
+          font-weight: bold;
+          top: -5px;
+        }
+        .price-number{
+          font-size: 2rem;
+          font-weight: 400;
+        }
+      }
+      .btn-plus{
+        border-radius: $border;
+        background-color: $gray;
+        width: 40px;
+        height: 37px;
+      }
+      .button {
+        border-radius: $border;
+        background-color: #ffffff;
+        color: $black;
+        height: 37px;
+        width: 120px;
+        border: none;
+        font-size: 0.8rem;
+        font-weight: 400;
+        @extend %gfont;
+      }
+
+    }
+  }
+}

@@ -1,0 +1,11 @@
+@import "../.:/../../../styles.scss";
+
+button {
+  background-color: $blue;
+  height: 40px;
+  width: 130px;
+  font-size: 0.8rem;
+  font-weight: 400;
+  border: none;
+  @extend %gfont;
+}
