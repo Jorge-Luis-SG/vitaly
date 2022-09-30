@@ -180,6 +180,10 @@
     }
   }
   &-section4 {
+    background-image: url(../../../assets/img/content&bg/bg-nft.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding-top: 10rem;
     h4 {
       font-size: $title1;
       @extend %gfont;
@@ -194,7 +198,7 @@
       }
     }
     &-contents{
-      margin-top: 6rem;
+      margin-top: 9rem;
       &-nft{
         display: grid;
         grid-template-columns: repeat(4, 260px);
