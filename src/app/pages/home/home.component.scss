@@ -11,20 +11,17 @@
     width: 100%;
     height: calc(100vh - 200px);
     margin: 0;
-    &-title1 {
-      font-weight: 400;
-      @extend %gfont;
-    }
-    &-title2 {
-      @extend %gfont;
-      font-weight: bold;
-    }
     & > div {
       width: 89%;
       margin-left: auto;
       h4 {
         font-size: $title1;
         margin-bottom: 0;
+        font-weight: 400;
+        @extend %gfont;
+        span {
+          font-weight: bold;
+        }
       }
       p {
         margin: 2rem 0;
@@ -52,7 +49,7 @@
     position: relative;
     min-height: 700px;
     &::after {
-      content: "";
+      content: " ";
       background-image: url(../../../assets/img/content&bg/shadow2.png),
         url(../../../assets/img/content&bg/home2.png);
       background-repeat: repeat-x, no-repeat;
@@ -65,7 +62,7 @@
     }
     & > div {
       &::after {
-        content: "";
+        content: " ";
         background-color: $blue;
         width: 230px;
         height: 390px;
@@ -80,21 +77,17 @@
       h4 {
         font-size: $title2;
         margin-bottom: 0;
-      }
-      &-title1 {
-        @extend %gfont;
         font-weight: 400;
-      }
-      &-title2 {
         @extend %gfont;
-        font-weight: bold;
+        span {
+          font-weight: bold;
+        }
       }
     }
     &-box2 {
       z-index: 1;
       p {
-        max-width: 470px;
-        text-align: justify;
+        @extend %paragraph;
         margin-bottom: 3rem;
       }
     }
@@ -102,7 +95,7 @@
   &-section3 {
     & > div {
       &::after {
-        content: "";
+        content: " ";
         width: 230px;
         height: 100px;
         position: absolute;
@@ -115,24 +108,20 @@
       h4 {
         font-size: 3.5rem;
         margin-bottom: 0;
+        @extend %gfont;
       }
       &-title1 {
         font-weight: 400;
-        @extend %gfont;
       }
       &-title2 {
         font-weight: bold;
-        @extend %gfont;
       }
       &-title3 {
         font-weight: 400;
         font-size: 2.8rem !important;
-        @extend %gfont;
       }
       p {
-        margin: 3rem 0;
-        text-align: justify;
-        max-width: 500px;
+        @extend %paragraph;
       }
     }
 
@@ -140,16 +129,16 @@
       &-item {
         max-width: 450px;
         &::after {
-          content: "";
+          content: " ";
           height: 300px;
           width: 350px;
-          background-color: #ffffff;
           position: absolute;
+          background-color: #ffffff;
           top: 180px;
           left: 60px;
         }
         // &::before {
-        //   content: "";
+        //   content: " ";
         //   height: 100px;
         //   width: 250px;
         //   background-color: $blue;
@@ -181,30 +170,147 @@
   }
   &-section4 {
     background-image: url(../../../assets/img/content&bg/bg-nft.png);
-      background-repeat: no-repeat;
-      background-size: cover;
-      padding-top: 10rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 10rem;
     h4 {
-      font-size: $title1;
-      @extend %gfont;
+      @extend %title-with-span;
     }
-    &-title1 {
-      font-weight: 400;
-    }
-    &-title2 {
-      font-weight: bold;
-      span {
-        font-weight: 400;
-      }
-    }
-    &-contents{
+    &-contents {
       margin-top: 9rem;
-      &-nft{
+      &-nft {
         display: grid;
         grid-template-columns: repeat(4, 260px);
         grid-gap: 1rem;
         justify-content: space-between;
       }
     }
+  }
+  &-section5 {
+    padding: 7rem;
+    background-color: black;
+    background-image: url(../../../assets/img/content&bg/home5-bg.png);
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-size: cover;
+    position: relative;
+    z-index: 99;
+    .row {
+      max-width: 1456px;
+      margin: 0 auto;
+    }
+    &-box1 {
+      background-color: black;
+      background-image: url(../../../assets/img/content&bg/graphic.png);
+      background-repeat: no-repeat;
+      background-position-y: bottom;
+      background-size: contain;
+      height: 620px;
+      max-width: 890px;
+      padding: 2.5rem;
+      h4 {
+        margin-bottom: 4.5rem;
+        font-size: 1.9rem;
+        @extend %title-with-span;
+      }
+      h5 {
+        margin-bottom: 2rem;
+        font-size: 1rem;
+        font-weight: bold;
+        @extend %gfont;
+      }
+      p {
+        margin-bottom: 3rem;
+        font-weight: 500;
+        @extend %gfont;
+      }
+      .btns {
+        max-width: 300px;
+        width: 100%;
+        button {
+          background-color: transparent;
+          width: 140px;
+          border-radius: 1rem;
+          padding: 0.45rem 0;
+          border: 2px solid $white;
+          font-size: 0.8rem;
+          font-weight: 500;
+          @extend %gfont;
+        }
+      }
+    }
+    &-box2 {
+      background-color: black;
+      background-image: url(../../../assets/img/content&bg/home5.png);
+      background-repeat: no-repeat;
+      background-position-y: bottom;
+      background-size: contain;
+    }
+  }
+  &-section6 {
+    padding-top: 6rem;
+    background-color: black;
+    background-image: url(../../../assets/img/content&bg/home6-bg.png);
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-size: cover;
+    &::after {
+      content: " ";
+      width: 60%;
+      height: 100%;
+      background-image: url(../../../assets/img/content&bg/shadow3.png);
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .row {
+      &::after {
+        content: " ";
+        width: 60%;
+        height: 170px;
+        background-image: url(../../../assets/img/content&bg/home6-line.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: absolute;
+        left: 0;
+        top: 46%;
+      }
+    }
+    &-box1 {
+      max-width: 600px;
+      position: relative;
+      z-index: 10;
+      img {
+        width: 100%;
+      }
+    }
+    &-box2 {
+      max-width: 600px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 10;
+      h4 {
+        @extend %title-with-span;
+      }
+      p {
+        @extend %paragraph;
+      }
+    }
+  }
+  &-section7 {
+    &-box1{
+      background-color: $blue;
+      padding: 10rem 0 6rem 7rem;
+      & > div{
+        max-width: 600px;
+        h4 {
+          @extend %title-with-span;
+        }
+        p {
+          @extend %paragraph;
+        }
+      }
+    }
+
   }
 }

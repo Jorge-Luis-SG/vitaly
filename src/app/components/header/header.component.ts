@@ -11,5 +11,7 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  menu(){
+    document.getElementById('header')?.classList.toggle("menu-active")
+  }
 }

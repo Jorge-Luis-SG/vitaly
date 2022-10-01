@@ -7,6 +7,8 @@ import { HeaderComponent } from './components/header/header.component';
 import { HomeComponent } from './pages/home/home.component';
 import { ButtonComponent } from './components/button/button.component';
 import { NftItemComponent } from './components/nft-item/nft-item.component';
+import { TeamComponent } from './components/team/team.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -14,8 +16,10 @@ import { NftItemComponent } from './components/nft-item/nft-item.component';
     HeaderComponent,
     HomeComponent,
     ButtonComponent,
-    NftItemComponent
-  ],
+    NftItemComponent,
+    TeamComponent,
+    FooterComponent
+    ],
   imports: [
     BrowserModule,
     AppRoutingModule

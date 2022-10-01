@@ -1,47 +1,74 @@
 /* You can add global styles to this file, and also import other style files */
-@import './assets/fonts/fonts';
+@import "./assets/fonts/fonts";
 
 //GLOBAL STYLES
 
-*{
+* {
   color: #ffffff;
 }
-li{
+li {
   list-style: none;
 }
 
-p{
+p {
   @extend %gfont;
   font-weight: 400;
 }
 
-body{
+body {
   background-color: black;
 }
 
-.col-12,.col-lg-,.row{
+.col-12,
+.col-lg-,
+.row {
   padding: 0;
   margin: 0;
 }
 
-.width-one{
+.width-one {
   @extend %width-one;
 }
-%width-one{
+%width-one {
   max-width: 1300px;
   margin: 0 auto;
   width: 90%;
 }
 
-
 // COLORES
 
 $black: #020202;
-$blue: #2E58FD;
-$gray: #D3D3D3;
+$blue: #2e58fd;
+$gray: #d3d3d3;
+$gray2: #4D4D4D;
+$white: #fdfdff;
+$white2: #FCFCFC;
 
 //SIZES
 
-$title1:2.5rem;
-$title2:4.6rem;
+$title1: 2.5rem;
+$title2: 4.6rem;
 
+
+
+
+
+
+
+// PRE STYLES
+
+%paragraph {
+  margin: 3rem 0;
+  text-align: justify;
+  max-width: 500px;
+  font-weight: 400;
+  @extend %gfont;
+}
+%title-with-span{
+    font-size: $title1;
+    font-weight: 400;
+    @extend %gfont;
+    span {
+      font-weight: bold;
+    }
+}

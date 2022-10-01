@@ -1,0 +1,39 @@
+@import "../.:/../../../styles.scss";
+
+img {
+  filter: brightness(0.4);
+  -webkit-filter: brightness(0.4);
+}
+
+.footer {
+  background-color: $white2;
+  padding: 3.5rem 0;
+  &-container {
+    &-box1 {
+    }
+    &-box2 {
+      img {
+        width: 25px;
+        height: 25px;
+        margin-right: 1rem;
+        transform: translateY(20px);
+        -webkit-transform: translateY(20px);
+        -moz-transform: translateY(20px);
+        -ms-transform: translateY(20px);
+        -o-transform: translateY(20px);
+}
+    }
+    &-box3 {
+      li {
+        color: $gray2;
+        margin-bottom: 1rem;
+        font-size: 0.85rem;
+        font-weight: bold;
+        @extend %gfont;
+        &:last-child {
+          margin-bottom: 0rem;
+        }
+      }
+    }
+  }
+}
