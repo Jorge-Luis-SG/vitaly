@@ -7,6 +7,9 @@ $border: 0.4rem;
       &::after {
         content: "";
         transform: translateY(0);
+        @media screen and (max-width:992px){
+          opacity: 1;
+        }
       }
     }
     .price-mint {
@@ -30,6 +33,14 @@ $border: 0.4rem;
       background-repeat: no-repeat;
       transform: translateY(100%);
       transition: all .35s;
+      @media screen and (max-width:992px){
+      transform: translateY(0);
+      opacity: 0;
+      -webkit-transform: translateY(0);
+      -moz-transform: translateY(0);
+      -ms-transform: translateY(0);
+      -o-transform: translateY(0);
+}
     }
     img {
       max-width: 270px;

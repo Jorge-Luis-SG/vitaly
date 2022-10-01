@@ -17,6 +17,10 @@
       }
     }
     &-box2 {
+      height: 100%;
+      .menu-open {
+        display: none;
+      }
       ul {
         max-width: 600px;
         width: 100%;
@@ -44,6 +48,9 @@
       &-box2 {
         position: absolute;
         z-index: 99;
+        .menu-open {
+          display: block;
+        }
         nav {
           max-width: 200px;
           margin: auto;

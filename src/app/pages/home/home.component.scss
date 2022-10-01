@@ -183,6 +183,24 @@
         grid-template-columns: repeat(4, 260px);
         grid-gap: 1rem;
         justify-content: space-between;
+        width: 90%;
+        max-width: 1400px;
+        margin: 0 auto;
+        @media screen and (max-width: 1160px) {
+          grid-template-columns: repeat(2, 260px);
+          grid-gap: 4rem 0rem;
+          width: 70%;
+        }
+        @media screen and (max-width: 992px) {
+          grid-template-columns: repeat(2, 260px);
+          grid-gap: 4rem 0rem;
+          width: 80%;
+        }
+        @media screen and (max-width: 670px) {
+          grid-template-columns: repeat(1, 260px);
+          grid-gap: 4rem 0rem;
+          justify-content: center;
+        }
       }
     }
   }
@@ -298,10 +316,10 @@
     }
   }
   &-section7 {
-    &-box1{
+    &-box1 {
       background-color: $blue;
       padding: 10rem 0 6rem 7rem;
-      & > div{
+      & > div {
         max-width: 600px;
         h4 {
           @extend %title-with-span;
@@ -311,6 +329,5 @@
         }
       }
     }
-
   }
 }
