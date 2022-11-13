@@ -2,22 +2,26 @@
 
 .home {
   padding: 0;
+  overflow: hidden;
   &-section1 {
-    background-image: url(../../../assets/img/content&bg/shadow.png),
-      url(../../../assets/img/content&bg/home1.png);
-    background-size: 100% 250px, cover;
+    background-image: url(../../../assets/img/content-bg/shadow.png),
+      url(../../../assets/img/content-bg/home1-2.png),
+      url(../../../assets/img/content-bg/home1-1.png),
+      url(../../../assets/img/content-bg/sky.png);
+    background-size: 100% 250px, cover, cover, 300%;
     background-repeat: no-repeat, no-repeat;
-    background-position-y: 100%, top;
+    background-position-y: 100%, top, top, center;
     width: 100%;
     height: calc(100vh - 200px);
     margin: 0;
+    animation: banner 20s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite both;
     & > div {
       width: 89%;
       margin-left: auto;
       h4 {
-        font-size: $title1;
         margin-bottom: 0;
         font-weight: 400;
+        @extend %title1;
         @extend %gfont;
         span {
           font-weight: bold;
@@ -25,6 +29,7 @@
       }
       p {
         margin: 2rem 0;
+        max-width: 500px;
       }
     }
     .redes-socials {
@@ -32,6 +37,12 @@
       bottom: 0;
       width: 220px;
       right: 12%;
+      @media screen and (max-width: 992px) {
+        right: 0;
+        left: 0;
+        margin: 0 auto;
+      }
+
       img {
         width: 20px;
         height: 20px;
@@ -44,14 +55,28 @@
       }
     }
   }
+
+  //ANIMACION
+      @keyframes banner {
+      0% {
+        background-position-x: center, left, left, 40%;
+        background-position-y: 100%, top, top, 40%;
+      }
+      100% {
+        background-position-x: center, left, left, 95%;
+        background-position-y: 100%, top, top, 87%;
+      }
+    }
+  //ANIMACION
+
   &-section2 {
     margin-top: 10rem;
     position: relative;
     min-height: 700px;
     &::after {
       content: " ";
-      background-image: url(../../../assets/img/content&bg/shadow2.png),
-        url(../../../assets/img/content&bg/home2.png);
+      background-image: url(../../../assets/img/content-bg/shadow2.png),
+        url(../../../assets/img/content-bg/home2.png);
       background-repeat: repeat-x, no-repeat;
       background-size: 640px, cover;
       background-position-y: 0%, 90%;
@@ -75,7 +100,7 @@
     }
     &-box1 {
       h4 {
-        font-size: $title2;
+        @extend %title2;
         margin-bottom: 0;
         font-weight: 400;
         @extend %gfont;
@@ -108,17 +133,26 @@
       h4 {
         font-size: 3.5rem;
         margin-bottom: 0;
-        @extend %gfont;
-      }
-      &-title1 {
         font-weight: 400;
+        @extend %gfont;
+        @media screen and (max-width: 767px) {
+          font-size: 3rem;
+        }
+        @media screen and (max-width: 500px) {
+          font-size: 2.5rem;
+        }
       }
       &-title2 {
         font-weight: bold;
       }
       &-title3 {
-        font-weight: 400;
         font-size: 2.8rem !important;
+        @media screen and (max-width: 767px) {
+          font-size: 2.2rem !important;
+        }
+        @media screen and (max-width: 500px) {
+          font-size: 1.8rem !important;
+        }
       }
       p {
         @extend %paragraph;
@@ -128,6 +162,8 @@
     &-box2 {
       &-item {
         max-width: 450px;
+        position: relative;
+
         &::after {
           content: " ";
           height: 300px;
@@ -136,23 +172,35 @@
           background-color: #ffffff;
           top: 180px;
           left: 60px;
+          z-index: 11;
+          @media screen and (max-width: 500px) {
+            height: 190px;
+            max-width: 240px;
+            width: 100%;
+          }
+          @media screen and (max-width: 400px) {
+            height: 160px;
+            max-width: 240px;
+            left: 40px;
+          }
         }
-        // &::before {
-        //   content: " ";
-        //   height: 100px;
-        //   width: 250px;
-        //   background-color: $blue;
-        //   position: absolute;
-        //   margin: auto;
-        //   bottom: 50px;
-        //   left: 0;
-        //   right: 0;
-        //   z-index: 1;
-        // }
+        &::before {
+          content: " ";
+          height: 400px;
+          width: 250px;
+          background-image: url(../../../assets/img/content-bg/lines.png);
+          background-size: contain;
+          position: absolute;
+          margin: auto;
+          bottom: 50px;
+          left: 0;
+          right: 0;
+          z-index: 10;
+        }
         img {
           width: 100%;
           position: relative;
-          z-index: 10;
+          z-index: 15;
         }
         .arrow {
           background-color: $blue;
@@ -169,7 +217,7 @@
     }
   }
   &-section4 {
-    background-image: url(../../../assets/img/content&bg/bg-nft.png);
+    background-image: url(../../../assets/img/content-bg/bg-nft.png);
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 10rem;
@@ -207,25 +255,30 @@
   &-section5 {
     padding: 7rem;
     background-color: black;
-    background-image: url(../../../assets/img/content&bg/home5-bg.png);
+    background-image: url(../../../assets/img/content-bg/home5-bg.png);
     background-repeat: no-repeat;
     background-position-y: center;
     background-size: cover;
     position: relative;
     z-index: 99;
+    @media screen and (max-width: 992px) {
+      padding: 5rem 0;
+      width: 90%;
+      margin: 0 auto;
+    }
     .row {
       max-width: 1456px;
       margin: 0 auto;
     }
     &-box1 {
       background-color: black;
-      background-image: url(../../../assets/img/content&bg/graphic.png);
+      background-image: url(../../../assets/img/content-bg/graphic.png);
       background-repeat: no-repeat;
       background-position-y: bottom;
       background-size: contain;
       height: 620px;
       max-width: 890px;
-      padding: 2.5rem;
+      padding: 2.5rem 0;
       h4 {
         margin-bottom: 4.5rem;
         font-size: 1.9rem;
@@ -259,7 +312,7 @@
     }
     &-box2 {
       background-color: black;
-      background-image: url(../../../assets/img/content&bg/home5.png);
+      background-image: url(../../../assets/img/content-bg/home5.png);
       background-repeat: no-repeat;
       background-position-y: bottom;
       background-size: contain;
@@ -268,7 +321,7 @@
   &-section6 {
     padding-top: 6rem;
     background-color: black;
-    background-image: url(../../../assets/img/content&bg/home6-bg.png);
+    background-image: url(../../../assets/img/content-bg/home6-bg.png);
     background-repeat: no-repeat;
     background-position-y: center;
     background-size: cover;
@@ -276,7 +329,7 @@
       content: " ";
       width: 60%;
       height: 100%;
-      background-image: url(../../../assets/img/content&bg/shadow3.png);
+      background-image: url(../../../assets/img/content-bg/shadow3.png);
       position: absolute;
       right: 0;
       top: 0;
@@ -286,7 +339,7 @@
         content: " ";
         width: 60%;
         height: 170px;
-        background-image: url(../../../assets/img/content&bg/home6-line.png);
+        background-image: url(../../../assets/img/content-bg/home6-line.png);
         background-size: cover;
         background-repeat: no-repeat;
         position: absolute;
@@ -319,6 +372,10 @@
     &-box1 {
       background-color: $blue;
       padding: 10rem 0 6rem 7rem;
+      @media screen and (max-width: 992px) {
+        padding: 10rem 0 6rem 0rem;
+        margin: 0 auto;
+      }
       & > div {
         max-width: 600px;
         h4 {
@@ -326,6 +383,16 @@
         }
         p {
           @extend %paragraph;
+        }
+      }
+    }
+    &-box2 {
+      & > div > div {
+        @media screen and (max-width: 992px) {
+          height: 500px;
+          max-width: 280px;
+          margin: 1.5rem auto;
+          width: 100%;
         }
       }
     }

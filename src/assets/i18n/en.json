@@ -1,0 +1,45 @@
+{
+  "home1":{
+    "title":"REAL STATE",
+    "title-1":"WITH BLOCKCHAIN",
+    "p":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum doloremque blanditiis dignissimos architecto culpa rem vel libero nesciunt porro placeat"
+  },
+  "home2":{
+    "title":"HOW IT ",
+    "title-1":"WORKS",
+    "p":"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt porro aliquid reiciendis veniam quod eum delectus ipsam adipisci, numquam dolore libero quae. Laboriosam nihil provident vero nam nostrum facere quisquam ratione teneturdistinctio odio. Eligendi temporibus",
+    "p2":"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt porro aliquid reiciendis veniam quod eum delectus ipsam adipisci, numquam dolore libero quae. Laboriosam nihil provident vero nam nostrum facere quisquam ratione teneturdistinctio odio. Eligendi temporibus",
+    "p3":"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt porro aliquid reiciendis veniam quod eum delectus ipsam adipisci, numquam dolore libero quae. Laboriosam nihil provident vero nam nostrum facere quisquam ratione teneturdistinctio odio. Eligendi temporibus"
+  },
+  "home3":{
+    "title":"QUALITIES",
+    "title-1":"AROUND",
+    "title-2":"THE PRODUCT",
+    "p":"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt porro aliquid reiciendis veniam quod eum delectus ipsam adipisci, numquam dolore libero quae. Laboriosam nihil provident vero nam nostrum facere quisquam ratione teneturdistinctio odio. Eligendi temporibus"
+  },
+  "home4":{
+    "title":"INVESTMENT",
+    "title-1":"EASY",
+    "title-2":"FOR YOU"
+  },
+  "home5":{
+    "title":"HOW DOES YOUR",
+    "title-1":"INVESTMENT",
+    "title-2":"WILL LOOK LIKE",
+    "title-3":"PROJECT STATIC",
+    "title-4":"Detail Project",
+    "btn":"Project Done"
+  },
+  "home6":{
+    "title":"YOUR ACCOUNT",
+    "title-1":"SAFE AND SECURE",
+    "p":"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt porro aliquid reiciendis veniam quod eum delectus ipsam adipisci, numquam dolore libero quae. Laboriosam nihil provident vero nam nostrum facere quisquam ratione teneturdistinctio odio. Eligendi temporibus",
+    "p2":"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt porro aliquid reiciendis veniam quod eum delectus ipsam adipisci, numquam dolore libero quae. Laboriosam nihil provident vero nam nostrum facere quisquam ratione teneturdistinctio odio. Eligendi temporibus"
+  },
+  "home7":{
+    "title":"OUR",
+    "title-1":"INVESTORS",
+    "p":"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt porro aliquid reiciendis veniam quod eum delectus ipsam adipisci, numquam dolore libero quae. Laboriosam nihil provident vero nam nostrum facere quisquam ratione teneturdistinctio odio. Eligendi temporibus",
+    "p2":"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt porro aliquid reiciendis veniam quod eum delectus ipsam adipisci, numquam dolore libero quae. Laboriosam nihil provident vero nam nostrum facere quisquam ratione teneturdistinctio odio. Eligendi temporibus"
+  }
+}

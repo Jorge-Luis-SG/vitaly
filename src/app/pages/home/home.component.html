@@ -1,15 +1,13 @@
 <main class="container-fluid home">
   <div class="home-section1 d-flex align-items-end position-relative">
     <div class="row width-one">
-      <div class="col-12">
-        <h4>REAL STATE <br> <span> WITH BLOCKCHAIN</span></h4>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
-          Ipsum doloremque blanditiis dignissimos architecto culpa rem<br>
-          vel libero nesciunt porro placeat</p>
+      <div class="col-12" data-aos="fade-right" data-aos-duration="1000">
+        <h4>{{'home1.title' | translate}} <br> <span> {{'home1.title-1' | translate}}</span></h4>
+        <p>{{'home1.p' | translate}}</p>
         <app-button></app-button>
       </div>
 
-      <div class="col-12 position-absolute d-flex justify-content-end align-items-center redes-socials">
+      <div data-aos="fade-up" data-aos-duration="1000" class="col-12 position-absolute d-flex justify-content-end align-items-center redes-socials">
         <img src="../../../assets/img/icons/fb.svg" alt="Facebook">
         <img src="../../../assets/img/icons/ig.svg" alt="Instagram">
         <img src="../../../assets/img/icons/twitter.svg" alt="Twitter">
@@ -22,25 +20,17 @@
   </div>
   <div class="home-section2 ">
     <div class="row width-one">
-      <div class="col-12 col-lg-6 home-section2-box1 d-flex flex-column align-items-center">
-        <h4>HOW IT <br><span>WORKS</span></h4>
+      <div class="col-12 col-lg-6 home-section2-box1 d-flex flex-column align-items-center"  data-aos="fade-up">
+        <h4>{{'home2.title' | translate}} <br><span>{{'home2.title-1' | translate}}</span></h4>
 
       </div>
-      <div class="col-12 col-lg-6 home-section2-box2  d-flex flex-column ">
+      <div data-aos="fade-left" class="col-12 col-lg-6 home-section2-box2  d-flex flex-column align-items-center align-items-lg-start mb-5 mb-lg-0">
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-          Sunt porro aliquid reiciendis veniam quod eum delectus ipsam adipisci, numquam dolore libero quae. Laboriosam
-          nihil provident vero nam nostrum facere quisquam ratione teneturdistinctio odio. Eligendi
-          temporibus<br><br>
+          {{'home2.p' | translate}}<br><br>
 
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-          Sunt porro aliquid reiciendis veniam quod eum delectus ipsam adipisci, numquam dolore libero quae. Laboriosam
-          nihil provident vero nam nostrum facere quisquam ratione teneturdistinctio odio. Eligendi
-          temporibus<br><br>
+          {{'home2.p2' | translate}}<br><br>
 
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-          eum delectus ipsam adipisci, numquam dolore libero quae. Laboriosam
-          nihil provident vero nam
+          {{'home2.p3' | translate}}
 
         </p>
         <app-button></app-button>
@@ -50,20 +40,18 @@
   </div>
   <div class="home-section3 position-relative py-3 ">
     <div class="row width-one py-5">
-      <div class="col-12 col-lg-6 d-flex flex-column justify-content-center mt-5 home-section3-box1 ">
-        <h4 class="home-section3-box1-title1">QUALITIES</h4>
-        <h4 class="home-section3-box1-title2">AROUND</h4>
-        <h4 class="home-section3-box1-title3">THE PRODUCT</h4>
+      <div data-aos="fade-right"  class="col-12 col-lg-6 d-flex flex-column justify-content-center mt-5 home-section3-box1 align-items-center align-items-lg-start">
+        <h4 class="home-section3-box1-title1">{{'home3.title' | translate}}</h4>
+        <h4 class="home-section3-box1-title2">{{'home3.title-1' | translate}}</h4>
+        <h4 class="home-section3-box1-title3">{{'home3.title-2' | translate}}</h4>
 
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
-          Ipsum doloremque blanditiis dignissimos architecto culpa rem<br>
-          vel libero nesciunt porro placeat</p>
+        <p>{{'home3.p' | translate}}</p>
         <app-button></app-button>
       </div>
 
-      <div class="col-12 col-lg-6 d-flex justify-content-end align-items-center home-section3-box2 ">
-        <div class="home-section3-box2-item position-relative">
-          <img src="../../../assets/img/content&bg/edfs.png">
+      <div class="col-12 col-lg-6 d-flex justify-content-center justify-content-lg-end align-items-center home-section3-box2  ">
+        <div class="home-section3-box2-item" data-aos="fade-left" >
+          <img src="../../../assets/img/content-bg/edfs.png">
           <div class="arrow d-flex align-items-center justify-content-center">
             <img src="../../../assets/img/icons/arrow.png">
           </div>
@@ -76,14 +64,14 @@
   </div>
   <div class="home-section4">
     <div class="row">
-      <h4 class="home-section4-title1 width-one">INVESTMENT<br> EASY<span> FOR YOU</span></h4>
+      <h4 data-aos="fade-right" data-aos-duration="1000" class="home-section4-title1 width-one">{{'home4.title' | translate}}<br> {{'home4.title-1' | translate}}<span> {{'home4.title-2' | translate}}</span></h4>
 
       <div class="col-12 home-section4-contents">
         <div class="home-section4-contents-nft">
-          <app-nft-item nft="1"></app-nft-item>
-          <app-nft-item nft="2"></app-nft-item>
-          <app-nft-item nft="3"></app-nft-item>
-          <app-nft-item nft="4"></app-nft-item>
+          <app-nft-item data-aos="fade-up" data-aos-duration="1000" nft="1"></app-nft-item>
+          <app-nft-item data-aos="fade-up" data-aos-duration="1000" nft="2"></app-nft-item>
+          <app-nft-item data-aos="fade-up" data-aos-duration="1000" nft="3"></app-nft-item>
+          <app-nft-item data-aos="fade-up" data-aos-duration="1000" nft="4"></app-nft-item>
         </div>
       </div>
 
@@ -91,20 +79,20 @@
   </div>
   <div class="home-section5">
     <div class="row justify-content-center">
-      <div class="col-12 col-lg-8 d-flex justify-content-between align-items-start home-section5-box1">
+      <div data-aos="fade-right" data-aos-duration="1500" class="col-12 col-lg-8 d-flex flex-column-reverse flex-md-row justify-content-end justify-content-md-evenly  align-items-start home-section5-box1">
         <div>
-          <h4>HOW DOES YOUR
-            <br>INVESTMENT<br><span>WILL LOOK LIKE</span>
+          <h4>{{'home5.title' | translate}}
+            <br>{{'home5.title-1' | translate}}<br><span>{{'home5.title-2' | translate}}</span>
           </h4>
           <h5>
-            PROJECT STATIC
+            {{'home5.title-3' | translate}}
           </h5>
           <p>
-            Detail Project
+            {{'home5.title-4' | translate}}
           </p>
         </div>
-        <div class="d-flex justify-content-between btns">
-          <button class="btn1">Project Done</button>
+        <div data-aos="fade-left" data-aos-duration="1000"  class="d-flex justify-content-between btns mb-5 mb-lg-0">
+          <button class="btn1">{{'home5.btn' | translate}}</button>
           <button class="btn2">2022</button>
         </div>
       </div>
@@ -115,20 +103,14 @@
   <div class="home-section6 position-relative">
     <div class="row">
       <div class="col-12 col-lg-6 home-section6-box1">
-        <img src="../../../assets/img/content&bg/home6.png" alt="">
+        <img src="../../../assets/img/content-bg/home6.png" alt="">
       </div>
-      <div class="col-12 col-lg-6 home-section6-box2 d-flex flex-column justify-content-center">
-        <h4>YOUR ACCOUNT <br> <span>SAFE AND SECURE</span> </h4>
+      <div class="col-12 col-lg-6 home-section6-box2 d-flex flex-column justify-content-center align-items-center align-items-lg-start my-5 my-lg-0">
+        <h4 class="text-center text-lg-start">{{'home6.title' | translate}} <br> <span>{{'home6.title-1' | translate}}</span> </h4>
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-          Sunt porro aliquid reiciendis veniam quod eum delectus ipsam adipisci, numquam dolore libero quae. Laboriosam
-          nihil provident vero nam nostrum facere quisquam ratione teneturdistinctio odio. Eligendi
-          temporibus<br><br>
+          {{'home6.p' | translate}}<br><br>
 
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-          Sunt porro aliquid reiciendis veniam quod eum delectus ipsam adipisci, numquam dolore libero quae. Laboriosam
-          nihil provident vero nam nostrum facere quisquam ratione teneturdistinctio odio. Eligendi
-          temporibus.
+          {{'home6.p2' | translate}}
         </p>
         <app-button></app-button>
       </div>
@@ -137,17 +119,11 @@
   <div class="row home-section7">
     <div class="col-12 col-lg-6 d-flex justify-content-center home-section7-box1">
       <div>
-        <h4>OUR <br><span>INVESTORS</span></h4>
+        <h4 class="text-center text-lg-start">{{'home7.title' | translate}} <br><span>{{'home7.title-1' | translate}}</span></h4>
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-          Sunt porro aliquid reiciendis veniam quod eum delectus ipsam adipisci, numquam dolore libero quae. Laboriosam
-          nihil provident vero nam nostrum facere quisquam ratione teneturdistinctio odio. Eligendi
-          temporibus<br><br>
+          {{'home7.p' | translate}}<br><br>
 
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-          Sunt porro aliquid reiciendis veniam quod eum delectus ipsam adipisci, numquam dolore libero quae. Laboriosam
-          nihil provident vero nam nostrum facere quisquam ratione teneturdistinctio odio. Eligendi
-          temporibus.
+          {{'home7.p2' | translate}}
         </p>
       </div>
     </div>

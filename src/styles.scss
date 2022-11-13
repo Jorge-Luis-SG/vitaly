@@ -40,20 +40,29 @@ body {
 $black: #020202;
 $blue: #2e58fd;
 $gray: #d3d3d3;
-$gray2: #4D4D4D;
+$gray2: #4d4d4d;
 $white: #fdfdff;
-$white2: #FCFCFC;
+$white2: #fcfcfc;
 
 //SIZES
-
-$title1: 2.5rem;
-$title2: 4.6rem;
-
-
-
-
-
-
+%title1{
+  font-size: 2.5rem;
+  @media screen and (max-width: 992px) {
+    font-size: 2rem;
+  }
+  @media screen and (max-width: 500px) {
+    font-size: 1.85rem;
+}
+}
+%title2{
+  font-size: 4.6rem;
+  @media screen and (max-width: 992px) {
+    font-size: 4rem;
+  }
+  @media screen and (max-width: 500px) {
+    font-size: 3.2rem;
+}
+}
 
 // PRE STYLES
 
@@ -61,14 +70,18 @@ $title2: 4.6rem;
   margin: 3rem 0;
   text-align: justify;
   max-width: 500px;
+  width: 85%;
   font-weight: 400;
   @extend %gfont;
+  @media screen and (max-width: 992px) {
+    margin: 3rem auto;
+  }
 }
-%title-with-span{
-    font-size: $title1;
-    font-weight: 400;
-    @extend %gfont;
-    span {
-      font-weight: bold;
-    }
+%title-with-span {
+  @extend %title1;
+  font-weight: 400;
+  @extend %gfont;
+  span {
+    font-weight: bold;
+  }
 }

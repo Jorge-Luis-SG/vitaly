@@ -26,8 +26,24 @@
         width: 100%;
         margin-bottom: 0;
         li {
+          cursor: pointer;
           font-weight: bold;
           @extend %gfont;
+        }
+        #lang {
+          & > div{
+          height: 0;
+          opacity: 0;
+          pointer-events: none;
+}
+        }
+        #lang.active {
+          & > div{
+            height: 100%;
+            opacity: 1;
+          pointer-events: all;
+
+          }
         }
       }
     }
@@ -44,6 +60,10 @@
     -o-transition: height 0.5s;
     &-content {
       &-box1 {
+        div {
+          max-width: 125px;
+          height: 110px;
+        }
       }
       &-box2 {
         position: absolute;
@@ -63,12 +83,15 @@
           -moz-transition: opacity 0.2s;
           -ms-transition: opacity 0.2s;
           -o-transition: opacity 0.2s;
-          li {
-            margin-bottom: 1rem;
-            font-size: 1rem;
+          ul {
+            padding-left: 0;
+            li {
+              margin-bottom: 1rem;
+              font-size: 1rem;
 
-            &:last-child {
-              margin-bottom: 0rem;
+              &:last-child {
+                margin-bottom: 0rem;
+              }
             }
           }
         }
@@ -86,9 +109,8 @@
   }
   .menu-active {
     height: 500px;
+    position: fixed;
     .header-content {
-      &-box1 {
-      }
       &-box2 {
         .menu-open {
           filter: invert(1);

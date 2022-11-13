@@ -11,7 +11,11 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
+  lang(){
+    document.getElementById('lang')?.classList.toggle("active");
+  }
   menu(){
-    document.getElementById('header')?.classList.toggle("menu-active")
+    document.getElementById('header')?.classList.toggle("menu-active");
   }
 }
